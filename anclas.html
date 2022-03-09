@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <H1 id="titulo">ANCLAS</H1>
+    <a id="vinculo-principal" href="index.html">PRINCIPAL</a>
+<br><br>
+<p>
+    Enlaces: Conocidos como link popularmente. Su objetivo es conectar una página web con otra, con un recurso tanto interno como externo, o con otro sitio web.
+</p>
+<p>Tienen el atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que solicitamos</p>
+<p>También tienen el atributo target, que configura como queremos visualizar el recurso o sitio que solicitamos</p>
+<p>Rutas absolutas: Tienen un protocolo, http o https y son únicas en la red. Se suelen utilizar para rutas externas.</p>
+<p>Rutas relativas: Pueden ser relativas al punto donde nos encontramos o relativas a la raíz del proyecto.</p>
+<p>no usan protocolo</p>
+<p>Si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos únicamente el nombre del archivo</p>
+<p>Si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta) de la que queremos salir.</p>
+<p> De este modo conectaremos los enlaces a cualquier parte de nuestra página.</p>
+<nav>
+    <p><a href="#post-1">Post 1</a></p>
+    <p><a href="#post-2">Post 2</a></p>
+    <p><a href="#post-3">Post 3</a></p>
+    <p><a href="#post-4">Post 4</a></p>
+    <p><a href="#post-5">Post 5</a></p>
+    <p><a href="index.html#objetivos">objetivos</a></p>
+</nav>
+<h4 >En objetivos lleva a un lugar en particular de otra página</h4>
+<article id="post-1">
+    <h2>Post 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit sint ratione. Nam, officia itaque. Eligendi minima expedita dolor quae reprehenderit ad alias, cupiditate natus deleniti fuga. Accusantium, necessitatibus quas.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat cupiditate, tempore dolorum fuga exercitationem, molestiae minus quia deleniti itaque sint amet corporis cum consectetur dolorem cumque animi praesentium, obcaecati pariatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat at sequi ducimus omnis, ipsam repellendus ipsum doloribus aperiam fuga qui accusamus, optio doloremque obcaecati numquam! Voluptatum dolorum aperiam non magnam.
+    </p>
+</article>
+
+<article id="post-2">
+    <h2>Post 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem minima amet deserunt ratione debitis, magni saepe inventore quas accusamus esse voluptates. Corporis perferendis iure quaerat libero totam? Aut, deleniti in?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus, dicta numquam est ea, deserunt voluptatum rerum officia quae eos nisi saepe. Ea a dicta quam maiores nisi modi quia.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum beatae aspernatur dolores nam maxime autem magnam culpa quaerat perspiciatis incidunt hic quos molestiae, ullam excepturi natus. Hic, aliquam cum.
+    </p>
+</article>
+
+<article id="post-3">
+    <h2>Post 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolore aspernatur nobis at dignissimos libero soluta necessitatibus animi dolorum sint vel eum assumenda saepe doloremque ipsa vero, iusto minus voluptatibus?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis dicta enim dolorem. Laboriosam commodi laborum nulla itaque deleniti modi consectetur iusto odit quaerat tempora molestias quae, dolores fugiat, accusamus ipsa!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia possimus temporibus, expedita sed similique officiis, repellendus vitae, autem enim cupiditate nobis dicta doloremque aspernatur illum labore optio. Distinctio, veritatis quaerat!
+    </p>
+</article>
+ 
+<article id="post-4">
+    <h2>Post 4</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum consequuntur, est ipsam pariatur quis quas! Quis nobis, neque repudiandae, aperiam, magnam sunt necessitatibus deleniti quam nihil id fuga officiis ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit ex provident mollitia exercitationem doloribus expedita maxime est facere ullam eaque enim illo maiores delectus, saepe veniam molestiae numquam. Distinctio.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam saepe voluptatibus, aspernatur maiores asperiores nulla repellat. Reiciendis quia odit, alias, quo quaerat omnis obcaecati accusamus id sequi asperiores ratione placeat?
+    </p>
+</article>
+
+<article id="post-5">
+    <h2>Post 5</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus beatae temporibus ducimus reiciendis fugiat, natus tenetur odit cum nisi dolorum vel enim quo laboriosam quia maiores eaque doloremque et itaque!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis nihil excepturi asperiores aut, officia iste voluptates ex molestias minima laboriosam dolor? Quaerat dolorum sed accusamus aspernatur totam culpa qui animi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus porro numquam quis fuga repudiandae ea saepe. Obcaecati officia similique possimus odio aliquid, quisquam eius autem aspernatur laudantium aliquam vero?
+    </p>
+</article>
+<hr>
+<h3 id="Enlace a una página que está fuera de la carpeta">Enlace a una página que está fuera de la carpeta</h3>
+<p>&#60a href="../index.html"&#62 &#60/a&#62</p>
+<hr>
+<p>Para salir directamente a la carpeta principal y desde ahí ir a otro archivo que está debajo</p>
+<p>&#60a href="/anclas.html"&#62 &#60/a&#62</p>
+<hr>
+<p>Para salir a la carpeta principal e ir al archivo que por defecto buscan los navegadores(index.html)</p>
+<p>&#60a href="/"&#62 &#60/a&#62</p>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <!-- Comun de todas las páginas -->
+    <h1 id="titulo">Atributos</h1>
+    <a id="vinculo-principal" href="index.html">PRINCIPAL</a>
+    <!-- Comun de todas las páginas -->
+    <br><br> <h3>Algunos atributos globales que están disponibles para la mayoría de las etiquetas en HTML</h3><br>
+    
+    <!-- CLASS -->
+    <p id="class"><span id="remarcado">class</span>: Este atributo se usa para dar estilos a través de css
+    </p>
+        <i>Ejemplo:</i>
+           <p> se escribe en HTML--- &#60p class="logo"&#62Logo&#60/p&#62
+            se encuentra en CSS--- .logo
+   </p>
+   
+    <hr><br>
+
+    <!-- ID -->
+    <p id="id"><span id="remarcado">id</span>: Es un identificador único que se utiliza para seleccionar el elemento desde JS y para hacer navegación a través de anclas.
+    </p>
+    <i>Ejemplo:</i>
+           <p> se escribe en HTML--- &#60p id="logo"&#62Logo&#60/p&#62
+            se encuentra en CSS--- #logo</p>
+      
+       <hr><br>
+
+       <!-- TITLE -->
+       <p id="title"><span id="remarcado">title</span>: Es un atributo que ayuda a la accesibilidad mostrando una descripción del elemento al que pertenece. Cuando se usa aparece el mensaje en un tooltip.
+       </p>
+       <i>Ejemplo:</i>
+           <p>se escribe en HTML--- &#60p title="Este es un ejemplo del atributo title"&#62Título con tooltip&#60/p&#62</p>
+        
+          <hr><br>
+
+            <!--DATA  -->
+          <p id="data"><span id="remarcado">data</span>: Es un atributo que nos permite guardar algún valor en la etiqueta HTML. 
+             <hr><br>
+
+             <h1 id="titulo">Atributos de los enlaces</h1>
+             
+             <p id="target"><span id="remarcado">target</span>: Define donde se abrirá el recurso solicitado. Por norma general al usar rutas absolutas pondremos como valor "_blank"
+             </p>
+             <i>Ejemplo:</i>
+                 <p>&#60a href="https://google.com" target="_blank"&#62ir a google &#60 a &#62</p>
+              
+                <hr><br>
+                <p id="download"><span id="remarcado">download</span>: Atributo booleano, sirve para descargar el recurso solicitado.
+                </p>
+                <p>IMPORTANTE: el recurso debe estar en nuestro mismo servidor</p>
+                <i>Ejemplo:</i>
+                    <p>&#60a href="/paginas/contacto.html"download&#62ir a google &#60 a &#62</p>
+                    <p>&#60a href="/assets/images/gato.jpg"download&#62  &#60 a &#62</p>
+                    <p>NOTA: Si el archivo fuera externo no lo descargaría y si fuera imagen en vez de descargarlo lo abriría</p>
+                 
+                   <hr><br>
+</body>
+</html>

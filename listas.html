@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1 id="titulo">Listas</h1>
+    <a id="vinculo-principal" href="index.html">PRINCIPAL</a>
+    <br><br><h2>Las listas en .HTML. sirven para listar contenido. En funcion del tipo de contenido de nuestra lista tenemos tres tipos y son:</h2>
+    <h3>ul <span>(unordered list)</span> Se utilizan cuando el orden de los elementos no influye</h3>
+    <h3>ol <span>(ordered list)</span> Se utiliza cuando el orden de los elementos es importante.</h3>
+    <h3>dl <span>(definition list)</span> Se utilizan para hacer una lista de definicion(diccionario)</h3>
+
+    <h4>Lista desordenada</h4>
+    <ul>
+        <li type="circle"> Opción 1 </li>
+        <li type="square"> Opción 2 </li>
+        <li> Opción 3 </li>
+        <li> Opción 4 </li>
+    </ul>
+    <h4>Lista ordenada</h4>
+    <ol type="A" start="3">
+        <li> Opción 1 </li>
+        <li> Opción 2 </li>
+        <li> Opción 3 </li>
+        <li> Opción 4 </li>
+    </ol>
+    <p>los atributos type y start son las usadas en ol</p>
+    
+    
+    <ul
+     >
+        <li> Opción 1 </li>
+        <li> 
+           <ul >
+              <li > subopción 1 </li>
+              <li> subopción 2 </li>
+              <li> subopción 3 </li>
+              <li> subopción 4 </li>
+              </ul>
+          </li>
+        <li> Opción 3 </li>
+        <li> Opción 4 </li> 
+    </ul>
+    
+    <h4>Lista de definición</h4>
+    <dl>
+        <dt> HTML </dt>
+        <dd>
+            Se usa para dar la estructura a una página web.
+        </dd>
+        <dt>CSS</dt>
+        <dd>se usa parta dar etsilos a una página web</dd>
+    
+    </dl>
+
+    <h4>Lista con enlaces</h4>
+    
+    <ul>
+       <li><a href="http://google.com"> Google </a> </li>
+       
+       <li><a href="pagina2.html">
+    Ir a página 2 </a> </li>
+       
+       <li><a href="http://youtube.com/" target="_blank"> Visitar youtube </a></li>
+       
+       <li> Opción 4 </li>
+    </ul>
+</body>
+</html>

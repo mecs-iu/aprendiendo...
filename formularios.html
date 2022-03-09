@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1 id="titulo">Formularios</h1>
+    <a id="vinculo-principal" href="index.html">PRINCIPAL</a>
+     
+ <br><br><p id="expl">   La estructura básica de un formulario se compone de 4 elementos: </p>
+ <p><strong>form:</strong> es la etiqueta que engloba nuestro formulario <br>
+    <strong>label:</strong> sirve para escribir el nombre del campo a rellenar <br>
+    <strong>input:</strong> sirve para crear un campo que permitirá al usuario interactuar <br>
+    <strong>button:</strong> crea un botón que permitirá enviar el formulario</p>
+
+    <form>
+        <label>Nombre</label>
+        <input>
+        <button>Enviar formulario</button>
+    </form>
+     <p>con este formulario se activa el campo al tocarlo, para que se active también al tocar "nombre" hay que asociar laber a input</p>
+     <form>
+        <label for="name" >Nombre</label>
+        <input id="name">
+        <button>Enviar formulario</button>
+    </form>
+     <p id="centrado">ó</p>
+   <form>
+       <label>
+           Nombre
+           <input>
+       </label>
+       <button>Enviar formulario</button>
+   </form> </BR>
+<!-- BUTTON -->
+    <p id="items-f">button</p>
+    <p>Se comporta igual que un botón</p>
+    <form>
+        <input>
+        <button>Enviar</button>
+    </form>    
+    <p>De este modo se envía un documento</p>
+    <p>para hacerlo a través de in input button es:</p>
+    <form>
+        <input>
+        <input type="submit" value="Enviar">
+    </form>    <br>
+    
+    <!-- COLOR -->
+    <p id="items-f">color</p> 
+    <p>Se utiliza para especificar un color</p>
+    <form>
+        <input type="color">
+    </form> <br>
+
+    <!-- DATE -->
+    <p id="items-f">date</p>  
+    <p>se utiliza para introducir una fecha</p>
+    <form>
+        <input type="date">
+    </form> <br>
+    
+    <!-- DATE-TIME -->
+    <p id="items-f">date-time</p>  
+    <p>Obsoleto</p>
+    
+    <!-- DATE-TIME-LOCAL -->
+    <p id="items-f">date-time local</p>
+   <p>Fecha y hora, no funciona con firefox pero se puede usar:</p>
+   <form>
+       <input type="date">
+       <input type="time">
+   </form><br> 
+   
+   <!-- EMAIL -->
+   <p id="items-f">email</p> 
+   <p>se utiliza para introducir un email</p>
+   <form>
+    <input type="email">
+</form> <br>
+
+<!-- HIDDEN -->
+   <p id="items-f">hidden</p>
+   <p>campo oculto, puede contener valor pero no se mostrará</p>
+
+   <!-- MONTH -->
+   <p id="items-f">month</p>
+   <p>Se utiliza para introducir un mes y año</p>
+   <form>
+    <input type="month">
+   </form> <br>
+
+   <!-- NUMBER -->
+   <p id="items-f">number</p>
+   <p>Se utiliza para para valores numericos</p>
+   <div>
+    <label>Numero
+        <input type="number">
+    </label>
+    </div> <br>
+
+    <!-- PASSWORD -->
+   <p id="items-f">password</p>
+   <p>Se utiliza para contraseñas</p>
+   <div>
+    <label>password
+        <input type="password">
+    </label>
+    </div> <br>
+
+    <!-- RANGE -->
+   <p id="items-f">range</p>
+   <p>Se utiliza para establecer un rango</p>
+   <div>
+    <label>Range
+        <input type="range" step="10" min="0" max="20">
+        <input type="range" step="5" min="0" max="20">
+    </label>
+    </div> <br>
+<!-- RESET -->
+    <p id="items-f">reset</p>
+   <p>Se utiliza para resetear el formulario</p>
+   <input type="reset">
+   <!-- SEARCH -->
+   <p id="items-f">search</p>
+   <p>Se utiliza para las barras de búsqueda</p>
+   <div>
+       <label>search
+           <input type="search">
+       </label>
+   </div> <br>
+   <!-- SUBMIT -->
+   <p id="items-f">submit</p> 
+   <p>Se utiliza para enviar el formulario</p>
+   <!-- TEL -->
+   <p id="items-f">tel</p> 
+   <p>Se utiliza para introducir números telefónicos</p>
+   <form>
+    <input type="tel">
+    </form> <br>
+    <!-- TEXT -->
+   <p id="items-f">text</p>
+   <p>Valor por defecto</p>
+   <input type="text">
+   <!-- TIME -->
+   <p id="items-f">time</p> 
+   <p>Se utiliza para introducir una hora</p>
+   <form>
+       <input type="time">
+   </form> <br>
+   <p id="items-f">url</p> 
+   <p>Se utiliza para introducir URLs</p>
+   <div>
+        <label>url
+           <input type="url">
+        </label>
+    </div> <br>
+   <p id="items-f">week</p>  
+   <p>Se utiliza para introducir el número de semana del año</p>
+   <form action="">
+       <input type="week" name="" id="">
+   </form><br>
+   <h1 id="titulo">Elementos seleccionables</h1>
+
+   <!-- RADIO -->
+   <p id="items-f">radio</p>  
+   <p>Permite seleccionar una única opción de una lista de opciones relacionadas</p>
+   <form>
+       <h2>Género</h2>
+       <label>Masculino
+           <input type="radio" name="gender" checked id="">
+       </label>
+       <label>Femenino
+           <input type="radio" name="gender" id="">
+       </label>
+       <label>Desconocido
+           <input type="radio" name="gender" id="">
+       </label>
+   </form>
+   <p>* La opción name ="gender" fuerza al código a seleccionar sólo uno.</p>
+   <p>También está el atributo booleano checked que, al colocarlo solo en una opción hace que quede seleccionado por defecto </p>
+  
+   <br>
+    <!-- CHECKBOX -->
+    <p id="items-f">checkbox</p>  
+   <p>permite seleccionar varias opciones de una lista de opciones relacionadas</p>
+   <h2>Lenguajes que conoces</h2>
+   <label>
+       HTML
+       <input type="checkbox" name="languajes" value="html">
+   </label>
+   <label>
+    CSS
+        <input type="checkbox" name="languajes" value="css">
+    </label>
+    <label>
+    JavaScript   
+        <input type="checkbox" name="languajes" value="javascript">
+    </label>
+    <p>type="checkbox" es para crear el casillero seleccionable</p>
+    <p>value="Languajes" es para decirle al navegador de que es el conjunto que estamos seleccionando</p>
+    <p>value="html" es para informar el nombre de lo que se seleccionó</p>
+  
+   <br>
+<!-- SELECT -->
+<p id="items-f">select</p>  
+<p>Crea una lista de opciones donde podemos seleccionar una o varias opciones</p>
+<p>Cada opción irá dentro de una etiqueta &#60option&#62 &#60/option&#62</p>
+<select name="lenguajes">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">JavaSript</option>
+</select><br>    
+    <p>De este modo podremos seleccionar solo una de las opciones que figuran, para seleccionar más de una ...</p>
+<select name="lenguajes" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaSript</option>
+    </select><br>
+        <p>De este modo en vez de ser un desplegable pasa a ser una lista</p>
+        <p>Con el atributo booleano multiple podremos seleccionar una opción o si queremos seleccionar mas opciones debemos hacerlo con "Ctrl" presionado </p>   
+        
+    <!--ELEMENTO SELECT AVANZADO  -->
+   <p id="items-f"> Elemento select avanzado</p>
+   <p>Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta &#60optgroup&#62 con el atributo "label" para nombrar la categoría</p>
+   <form>
+       <select name="mascotas">
+           <optgroup label="4 patas">
+               <option value="perro">Perro</option>
+               <option value="gato">Gato</option>
+               <option value="hamster">Hamster</option>
+               <option value="conejo">Conejo</option>
+           </optgroup>
+           <optgroup label="aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="otras">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarántula</option>
+            </optgroup>
+       </select>
+    </form> <br>
+     <!-- DATALIST -->
+     <p id="items-f">datalist</p>
+     <p>Es muy similar a select pero incluye un filtro para que se pueda buscar de una forma mas sencilla</p>
+<form>
+    <input type="list" list="pets">
+    <datalist id="pets">
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="hamster">Hamster</option>
+        <option value="conejo">Conejo</option>
+        <option value="loro">Loro</option>
+        <option value="canario">Canario</option>
+        <option value="serpiente">Serpiente</option>
+        <option value="tarantula">Tarántula</option>
+    </datalist>
+</form>
+<p>Con datalist queda el dato que da "value"
+    y podemos dejar opcional el mensaje a modo de subtítulo ó información  </p> <br>
+<!-- FIELDSET -->
+<p id="items-f">fieldset</p>
+<p>Se utiliza para agrupar elementos dentro de un formulario</p> <br>
+
+<p id="items-f">legend</p>
+<p>Representa una etiqueta para el contenido del fieldset</p>
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+       <div> <label for="name">Nombre</label>
+        <input type="text" id="name"></div>
+        <div><label for="surname">Apellido</label>
+            <input type="text" id="surname"></div>
+    </fieldset>
+</form> <br>
+<!-- FILE -->
+<p id="items-f">file</p>
+<p>Este input se utiliza para cargar archivos y enviarlos desde un formulario</p> <br> 
+<input type="file"> <br>
+<!-- METER -->
+<p id="items-f">meter</p>
+<p>Representa un valor dentro de un rango conocido</p>
+<label for="fuel">Combustible</label>
+<meter id="fuel" min="0" max="100" value="40" low="30" high="75" optimun="50">
+     </meter>
+     <br>
+     <!-- PROGRESS -->
+<p id="items-f">progress</p>
+<p>Representa el progreso de una tarea</p>
+<label for="task">Tarea 1</label>
+<progress id="task" max="100" value="10"></progress> 
+<!-- TEXTAREA -->
+<p id="items-f">textarea</p>
+<p>Se utiliza para introducir texto en un formulario</p>
+<label for="message">Mensaje</label>
+<textarea name="" id="messaje" cols="30" rows="10"></textarea>
+<h1 id="titulo">Atributos para formularios</h1>
+<!-- PLACEHOLDER -->
+<p id="items-f">placeholder</p>
+<p>Da una pista de lo que el usuario debe introducir</p> <br>
+<form>
+    <input type="text" placeholder="Introduce tu nombre" required>
+</form>
+<!-- READONLY -->
+<p id="items-f">readonly</p>
+<p>hace que un campo sea de solo lectura</p>
+<form>
+    <input type="text" value="hola" readonly>
+</form>
+<!-- DISABLED -->
+<p id="items-f">disabled</p>
+<p>Desactiva el campo, no se podrá escribir en él</p>
+<form>
+    <input type="text" value="hola" disabled>
+</form>
+ <!-- MIN - MAX -->
+<p id="items-f">min - max</p>
+<p>Establece el mínimo y máximo de un campo numérico</p>
+<form>
+    <input type="number" min="5" max="10" >
+    <input type="submit">
+</form>
+ <!-- MINLENGHT - MAXLENGHT -->
+ <p id="items-f">minnlenght - maxlenght</p>
+ <p>Establece el mínimo y máximo de caracteres de un campo de texto</p>
+ <form>
+     <input type="text" minlength="3" maxlength="10" autofocus >
+     <input type="submit">
+ </form>
+ <!-- SELECTED -->
+ <p id="items-f">selected</p>
+ <p>Equivale a checked en los select, sirve para establecer una opción por defecto</p>
+ <form>
+     <select name="numbers">
+         <option value="one">One</option>
+         <option value="two" selected>Two</option>
+     </select>    
+ </form>
+ <!-- AUTOFOCUS -->
+ <p id="items-f">autofocus</p>
+ <p>Para poner el foco por defecto al cargar el formulario</p> 
+
+ 
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+body{background-color:rgb(192, 233, 233);
+margin: 30px;}
+#titulo{color: blue;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   background-color: aquamarine;
+   border: 2px solid #000;
+   border-radius: 10px;
+   padding: 0 auto;
+   margin: 30px;
+   text-align: center
+   
+  }  
+   
+
+   h3 span{color: brown;}
+  
+   h4{color: rgb(87, 69, 23);
+    background-color: chartreuse;
+    padding: 10px;
+    margin: 30px;
+  }
+
+  #vinculo-principal{background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    
+    }
+    
+   
+   .subtitulo{background-color: bisque;
+  margin-left: 50px;}
+   .subtitulo span{color: brown;}
+
+   #objetivos{color: blueviolet;
+              background-color: aquamarine;
+              padding: 5px;
+            margin:60px;
+        text-align: center;}
+        .navegacion{color: cornflowerblue;}
+                   
+nav{background-color: aquamarine;
+text-align: center;
+padding: 10px;
+margin: 30px;}
+/* TODOS */
+#mensaje{background-color: red;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;}
+   
+    #remarcado{color: rgb(122, 25, 187);}
+/* TODOS */
+
+
+    /* TABLAS */
+    table{
+      font-family: sans-serif;
+      border: 2px solid grey;
+      border-collapse: collapse;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }  
+    caption{
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    th,td{
+      border: 2px solid grey;
+      padding: .5rem;
+    }
+    tr:nth-child(4) td:nth-child(2){
+      background-color: aqua;
+      letter-spacing: 90px;
+      padding-left: 50px;
+      text-transform: uppercase;
+    }
+    td:first-child,th,tfoot{
+      background-color: aqua;
+    }
+    
+    #recreo{background-color: blanchedalmond;}
+      #tfoot{background-color: blanchedalmond;}
+      #rowspan{background-color: blanchedalmond;}
+       
+      col:nth-child(2){background-color: blanchedalmond;}
+
+      col:nth-child(5){background-color: rgb(81, 45, 238);}
+      
+    /*TABLAS  */
+
+    /* etiquetas importantes... */
+    p span{color: red;}
+
+/* etiquetas importantes... */
+
+/* formularios */
+#centrado{text-align: center;}
+/* formularios */
+
+/* barra lateral */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#toggle-btn{
+  background-color: coral;
+  scale: 200;
+  width: 10px;}
+  /* al icono de menu no le afecta nada :( */
+#sidebar {
+  
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: darkseagreen;
+  left: -200px;
+  transition: all 500ms linear;
+  border-top-right-radius: 60px;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul li {
+  color: rgba(230, 230, 230, .9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+  text-align: center;
+}
+
+.logo {
+  /* border-radius: 50%; */
+  border-top-right-radius: 50%;
+  display: block;
+  /* margin: 0 auto;  */
+  margin-left:37%;
+ 
+  
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid #000;
+}
+/* barra lateral */
+
+/* curriculum */
+#body-c{background-color: darkcyan;}
+#h1-c{background-color:white;}
+#div-c{
+  background-color: white;
+  border: 1px solid black;
+  padding: 12px;
+  width: 60%;
+  margin: 0 auto;
+}
+#fieldset-c{margin-bottom: 12px;}
+#legend-c{
+  background-color: rgb(6, 36, 36);
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+/* curriculum */
+
+/* Formularios */
+#items-f{background-color:cadetblue;
+padding-left: 10px;
+padding-right: 10px;}
+/* Formularios */
+
+/* Contenido embebido */
+img{max-width: 100%;}
+

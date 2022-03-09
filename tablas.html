@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1 id="titulo">Tablas</h1>
+    <a id="vinculo-principal" href="index.html">PRINCIPAL</a>
+    <br><br><H2>Las tablas en HTML sirben para mostrar contenido tabulado</H2>
+    <h2>La estructura básica de una tabla se compone de:</h2>
+    <p>tr: table row, etiqueta que construye una fila</p>
+    <p>td: table data, etiqueta que construye una celda</p>
+   
+    <p id="mensaje">Truco: el número de celdas dentro de un td establecerá el número de columnas de la tabla.</p>
+    <table id="table">
+        <caption>HORARIO DE CLASES</caption>
+        <thead>
+    
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+       <tbody>
+           <tr>
+               <td>8:30-9:30</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+               <td>sociales</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+           </tr>
+           <tr>
+               <td>9:30-10:25</td>
+               <td>Lengua</td>
+               <td>Lengua</td>
+               <td>Matemáticas</td>
+               <td>Ciencias</td>
+               <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:25-11:20</td>
+                <td>Ed. Física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:20-11:45</td>
+                <td>RECREO</td>
+            </tr>
+            <tr>
+                <td>11:45-12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:40-13:35</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td>13:35-14:20</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td><a href="http://google.com">Ir a Google</a></td>
+            </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td colspan="5">Total Asignaturas</td>
+               <td>12</td>
+           </tr>
+       </tfoot>
+    </table>
+    <br>
+    <p>El contenido de una tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla.</p>
+    <p>De forma opcional podemos colocar un tboot a la tabla para establecer un pie de tabla. Esto es algo que algunas tablas tienen como suma de cantidades o total.</p>
+    <p>para hacer que las celdas ocupen mas de una fila o mas de una columna tenemos 2 atributos:</p>
+    <p> <span id="remarcado">rowspan</span> sirve para que una celda ocupe más de una fila, el valor por defecto es 1.</p>
+    <p> <span id="remarcado">colspan</span> sirve para que una celda ocupe más de una columna, el valor por defecto es 1.</p>
+    <p>Ahora haremos que la celda "recreo" ocupe 5 celdas y le daremos color solo a esas 5 celdas, lo mismo haremos con la celda "total asignaturas"</p>
+    <table id="table">
+        <caption>HORARIO DE CLASES</caption>
+        <thead>
+    
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+       <tbody>
+           <tr>
+               <td>8:30-9:30</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+               <td>sociales</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+           </tr>
+           <tr>
+               <td>9:30-10:25</td>
+               <td>Lengua</td>
+               <td>Lengua</td>
+               <td>Matemáticas</td>
+               <td>Ciencias</td>
+               <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:25-11:20</td>
+                <td>Ed. Física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:20-11:45</td>
+                <td id="recreo" colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td>11:45-12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:40-13:35</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td>13:35-14:20</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td><a href="http://google.com">Ir a Google</a></td>
+            </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td id="tfoot" colspan="5">Total Asignaturas</td>
+               <td>12</td>
+           </tr>
+       </tfoot>
+    </table>
+
+    <p>Ahora usaremos el atributo rowspan y le daremos color a lo que modifiquemos y será de la siguiente manera:</p>
+    <p>haremos que la primer materia de lunes ocupe también la hora de lengua, para esto debemos modificar la celda "matemáticas" pero también deberemos borrar la celda de "lengua"</p>
+    <table id="table">
+        <caption>HORARIO DE CLASES</caption>
+        <thead>
+    
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+       <tbody>
+           <tr>
+               <td>8:30-9:30</td>
+               <td id="rowspan" rowspan="2">Matemáticas</td>
+               <td>Matemáticas</td>
+               <td>sociales</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+           </tr>
+           <tr>
+               <td>9:30-10:25</td>
+               
+               <td>Lengua</td>
+               <td>Matemáticas</td>
+               <td>Ciencias</td>
+               <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:25-11:20</td>
+                <td>Ed. Física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:20-11:45</td>
+                <td>RECREO</td>
+            </tr>
+            <tr>
+                <td>11:45-12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:40-13:35</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td>13:35-14:20</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td><a href="http://google.com">Ir a Google</a></td>
+            </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td>Total Asignaturas</td>
+               <td>12</td>
+           </tr>
+       </tfoot>
+    </table>
+<p>Cuando necesitemos seleccionar una columna, tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas tengamos, cada etiqueta col equivaldrá a una columna siguiendo el mismo orden que tienen en la tabla.</p>
+<table id="table">
+    <caption>HORARIO DE CLASES</caption>
+    <colgroup >
+        <col>
+        
+
+    </colgroup>
+    <thead>
+
+        <tr>
+            <th></th>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+        </tr>
+    </thead>
+   <tbody>
+       <tr>
+           <td>8:30-9:30</td>
+           <td rowspan="2">Matemáticas</td>
+           <td>Matemáticas</td>
+           <td>sociales</td>
+           <td>Matemáticas</td>
+           <td>Matemáticas</td>
+       </tr>
+       <tr>
+           <td>9:30-10:25</td>
+           
+           <td>Lengua</td>
+           <td>Matemáticas</td>
+           <td>Ciencias</td>
+           <td>Ed. Física</td>
+        </tr>
+        <tr>
+            <td>10:25-11:20</td>
+            <td>Ed. Física</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Ed. Física</td>
+        </tr>
+        <tr>
+            <td>10:20-11:45</td>
+            <td colspan="5">RECREO</td>
+        </tr>
+        <tr>
+            <td>11:45-12:40</td>
+            <td>Inglés</td>
+            <td>Sociales</td>
+            <td>Inglés</td>
+            <td>Tutoría</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>12:40-13:35</td>
+            <td>Música</td>
+            <td>Ed. Física</td>
+            <td>Plástica</td>
+            <td>Taller</td>
+            <td>Música</td>
+        </tr>
+        <tr>
+            <td>13:35-14:20</td>
+            <td>Música</td>
+            <td>Ed. Física</td>
+            <td>Plástica</td>
+            <td>Taller</td>
+            <td><a href="http://google.com">Ir a Google</a></td>
+        </tr>
+   </tbody>
+   <tfoot>
+       <tr>
+           <td  colspan="5">Total Asignaturas</td>
+           <td>12</td>
+       </tr>
+   </tfoot>
+</table>
+    <p>Total asignaturas quedó coloreado de esa forma porque está el atributo "colspan"</p>
+    <p>Si colocamos otro "col" se seleccionará la columna siguiente</p>
+   
+   
+    <table id="table">
+        <caption>HORARIO DE CLASES</caption>
+        <colgroup id="colgroup">
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+    
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+       <tbody>
+           <tr>
+               <td>8:30-9:30</td>
+               <td rowspan="2">Matemáticas</td>
+               <td>Matemáticas</td>
+               <td>sociales</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+           </tr>
+           <tr>
+               <td>9:30-10:25</td>
+               
+               <td>Lengua</td>
+               <td>Matemáticas</td>
+               <td>Ciencias</td>
+               <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:25-11:20</td>
+                <td>Ed. Física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:20-11:45</td>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td>11:45-12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:40-13:35</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td>13:35-14:20</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td><a href="http://google.com">Ir a Google</a></td>
+            </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td  colspan="5">Total Asignaturas</td>
+               <td>12</td>
+           </tr>
+       </tfoot>
+    </table>
+    
+    
+    <p>colocando 6 col se da color a las seis columnas pero en css con la opcion "col:nth-child(2)" se lñe da color solo a la segunda columna, este atributo es muy importante a la hora de dar estilos a dos columnas por separado</p>
+    
+    
+    <table id="table">
+        <caption>HORARIO DE CLASES</caption>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+    
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+       <tbody>
+           <tr>
+               <td>8:30-9:30</td>
+               <td rowspan="2">Matemáticas</td>
+               <td>Matemáticas</td>
+               <td>sociales</td>
+               <td>Matemáticas</td>
+               <td>Matemáticas</td>
+           </tr>
+           <tr>
+               <td>9:30-10:25</td>
+               
+               <td>Lengua</td>
+               <td>Matemáticas</td>
+               <td>Ciencias</td>
+               <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:25-11:20</td>
+                <td>Ed. Física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ed. Física</td>
+            </tr>
+            <tr>
+                <td>10:20-11:45</td>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td>11:45-12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:40-13:35</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td>13:35-14:20</td>
+                <td>Música</td>
+                <td>Ed. Física</td>
+                <td>Plástica</td>
+                <td>Taller</td>
+                <td><a href="http://google.com">Ir a Google</a></td>
+            </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td  colspan="5">Total Asignaturas</td>
+               <td>12</td>
+           </tr>
+       </tfoot>
+    </table>
+<p>La quinta columna tomó color menos la celda 4 por la acción de colspan="5"</p>
+
+<table id="table">
+    <caption>HORARIO DE CLASES</caption>
+        <col span="5">
+        <col>
+       
+        
+    </colgroup>
+    <thead>
+
+        <tr>
+            <th></th>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+        </tr>
+    </thead>
+   <tbody>
+       <tr>
+           <td>8:30-9:30</td>
+           <td rowspan="2">Matemáticas</td>
+           <td>Matemáticas</td>
+           <td>sociales</td>
+           <td>Matemáticas</td>
+           <td>Matemáticas</td>
+       </tr>
+       <tr>
+           <td>9:30-10:25</td>
+           
+           <td>Lengua</td>
+           <td>Matemáticas</td>
+           <td>Ciencias</td>
+           <td>Ed. Física</td>
+        </tr>
+        <tr>
+            <td>10:25-11:20</td>
+            <td>Ed. Física</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Ed. Física</td>
+        </tr>
+        <tr>
+            <td>10:20-11:45</td>
+            <td colspan="5">RECREO</td>
+        </tr>
+        <tr>
+            <td>11:45-12:40</td>
+            <td>Inglés</td>
+            <td>Sociales</td>
+            <td>Inglés</td>
+            <td>Tutoría</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>12:40-13:35</td>
+            <td>Música</td>
+            <td>Ed. Física</td>
+            <td>Plástica</td>
+            <td>Taller</td>
+            <td>Música</td>
+        </tr>
+        <tr>
+            <td>13:35-14:20</td>
+            <td>Música</td>
+            <td>Ed. Física</td>
+            <td>Plástica</td>
+            <td>Taller</td>
+            <td><a href="http://google.com">Ir a Google</a></td>
+        </tr>
+   </tbody>
+   <tfoot>
+       <tr>
+           <td  colspan="5">Total Asignaturas</td>
+           <td>12</td>
+       </tr>
+   </tfoot>
+</table>
+<p>En este caso solo seleccionamos dos columnas pero con el atributo colspan="5" quedaron la primer columna de cinco lugares y la sexta de solo 1, por eso es que al darle color a la segunda co es que se pintó la sexta</p>
+
+
+</body>
+</html>
